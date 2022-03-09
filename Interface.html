@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<title>Data Cleaning System</title>
+<link rel="shortcut icon" href="C:\Users\admin\Desktop\Sem6\SE\Software\download.png" type="image/x-icon"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="C:\Users\admin\Desktop\Sem6\SE\Software\1.css">
+<link rel="stylesheet" href="C:\Users\admin\Desktop\Sem6\SE\Software\2.css">
+<!-- Font Awesome CDN-->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+<!-- Google Font -->
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+rel="stylesheet"
+/>
+<!-- Stylesheet -->
+<link rel="stylesheet" href="3.css" />
+<style>
+@media screen and (max-width: 455px) {
+    .h3 {
+        font-size:16px;
+    }
+}
+</style>
+<body style="background-image: url('blue.jpg');background-position: 100%;">
+<div class="w3-sidebar w3-light-grey w3-card-4 w3-animate-left" style="width:200px;" id="mySidebar">
+  <div class="w3-bar w3-dark-grey">
+  <span class="w3-bar-item w3-padding-16">Contents</span>
+  <button onclick="w3_close()"
+  class="w3-bar-item w3-button w3-right w3-padding-16" title="close Sidebar">&times;</button>
+  </div>
+  <div class="w3-bar-block">
+  <a class="w3-bar-item w3-button w3-green" href="javascript:void(0)">Home</a>
+  <a class="w3-bar-item w3-button" href="javascript:void(0)">About</a>
+  <a class="w3-bar-item w3-button" href="javascript:void(0)">Contact</a>
+  </div>
+  <a class="w3-bar-item w3-button" href="javascript:void(0)">Support</a>
+  </div>
+</div>
+
+<div id="main" style="margin-left:200px;">
+<div class="w3-container w3-display-container">
+  <span title="open Sidebar" style="display:none" id="openNav" class="w3-button w3-transparent w3-display-topleft w3-xlarge" onclick="w3_open()">&#9776;</span>
+</div>
+<style>
+  .topnav {
+  overflow: hidden;
+  background-color:black;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+<div style="background-color: grey;height: 55px;margin-top: 50px;">
+  <div class="topnav" style="margin-top:4%;">
+    <img src="C:\Users\admin\Desktop\Sem6\SE\Software\capture2.jpg" style="margin-top: 10px;padding-left: 10px;">
+    <a class="active" href="#login"><b>Login</b></a>
+    <a href="#signup"><b>Sign Up</b></a>
+  </div>
+</div>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "180px";
+  document.getElementById("mySidebar").style.width = "180px";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+<div style="margin-left: 5%;">
+  <img src="C:\Users\admin\Desktop\Sem6\SE\Software\photo.png" style="margin-top: 10px; width: 45%; height: 380px;">
+  <b><h3 class="h3" style="float: right;margin-top:13%;margin-right:5%;color:darkgreen; font-style:normal; font-size: 45px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">GET YOUR DATA CLEANED!!!</h3></b>
+</div><br><br><br>
+<div style="margin-left: 20%;margin-right:20%;font-family: Georgia, 'Times New Roman', Times, serif;">
+  <p style="font-size:20px;border-style:double;border-width: 1;padding: 5%;background-color: aliceblue;" align="center">
+    <img src="C:\Users\admin\Desktop\Sem6\SE\Software\capture.jpg" style="margin-top: 10px;"><br>
+    CleanUp is an automated data cleaning software. Here you get various options for cleaning up your data, viz. Removing Outliers, Filling null values, Removing duplicates, Remove extra spaces and format names; dates.
+
+CleanUp always keeps your data private on your own computer until YOU want to share or collaborate. Your private data never leaves your computer unless you want it to.
+  </p>
+</div><br>
+  <section>
+    <div class="row">
+      <h1 class="section-heading" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">OUR SERVICES</h1>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fas fa-hammer"></i>
+          </div>
+          <h3>Remove Outliers</h3>
+          <p>
+            Removes the data points that differ significantly from other observations.
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fas fa-brush"></i>
+          </div>
+          <h3>Fill Out Null Values</h3>
+          <p>
+            Removes and fills out the null values detected in the dataset.
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fas fa-wrench"></i>
+          </div>
+          <h3>Remove Duplicate Values</h3>
+          <p>
+            Removes all duplicacies in values detected in the dataset
+          </p>
+        </div>
+      </div>
+      <div class="column" style="margin-left:16.5%;">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fas fa-truck-pickup"></i>
+          </div>
+          <h3>Remove Extra Spaces</h3>
+          <p>
+            Removes the white blank spaces detected in the dataset
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i class="fas fa-broom"></i>
+          </div>
+          <h3>Format Names, Dates</h3>
+          <p>
+            Formats Names and Dates in the correct format in dataset
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html> 
